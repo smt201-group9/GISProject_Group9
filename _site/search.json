@@ -5,5 +5,33 @@
     "title": "About",
     "section": "",
     "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "GIS Project",
+    "section": "",
+    "text": "Welcome to Group 9’s GIS Project Website!"
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Group 9",
+    "section": "",
+    "text": "In this project, we are given two major themes and sub-themes. A detailed description of this project is available on this page. Land cover classification is a commonly used application area of digital image analysis.\nIn this project, the following articles will be reviewed."
+  },
+  {
+    "objectID": "overview.html#objectives",
+    "href": "overview.html#objectives",
+    "title": "Group 9",
+    "section": "Objectives",
+    "text": "Objectives\nThe objective of this project is to…."
+  },
+  {
+    "objectID": "overview.html#task",
+    "href": "overview.html#task",
+    "title": "Group 9",
+    "section": "Task",
+    "text": "Task\nThe project tasks are as follows:"
   }
 ]

@@ -6,7 +6,7 @@ website:
   navbar:
     background: dark
     left:
-    - href: overview.qmd
+    - href: overview.html
       text: Overview
     - href: method.qmd
       text: Methodology

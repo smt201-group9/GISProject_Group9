@@ -2,8 +2,6 @@
 title: "About"
 ---
 
-About this site
+This website is for the fulfillment of SMT201: Geographic Information Systems for Urban Planning AY2022-23 T1 under Professor Kam Tin Seong.
 
-```{r}
-1 + 1
-```
+Click [here](https://github.com/smt201-group9/GISProject_Group9) to access our GitHub repository 🗺️

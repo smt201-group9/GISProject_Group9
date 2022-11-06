@@ -9,6 +9,8 @@ In this project, we are given two major themes and sub-themes. A detailed descri
 
 In this project, the following articles will be reviewed.
 
+## Motivation
+
 ## Objectives
 
 The objective of this project is to....
@@ -16,3 +18,49 @@ The objective of this project is to....
 ## Task
 
 The project tasks are as follows:
+
+## Data
+
+For the purpose of this project, **Sentinel-2 Satellite Data** will be used. The following are the IDs of the satellite data for 2016 and 2020:
+
+-   S2A_MSIL1C_20160923T031532_N0204_R118_T48NUG_20160923T033246
+
+-   S2A_MSIL1C_20200126T032011_N0208_R118_T48NUG_20200126T061348
+
+The data is taken from Copernicus Open Access Hub and can be downloaded via this [link](https://scihub.copernicus.eu/dhus/#/home)
+
+The rationale behind choosing Sentinel-2 over Landsat-8 is because Sentinel-2 provides high resolution optical imaging for land services at a 10m resolution, which can potentially yield better accuracy. However, Sentinel-2 data is only available from June 2015 onwards, which means it is unable to detect earlier change prior to June 2015. Hence, 2016 and 2020 satellite images will be used in our analysis.
+
+The Sentinel-2 satellites each carry a single multi-spectral instrument (MSI) with 13 spectral channels in the visible/near infrared (VNIR) and short wave infrared spectral range (SWIR).
+
+The table below provides more details about the 13 spectral bands.
+
+![](table.jpg){width="461"}
+
+*Source: [Satellite Imaging Corporation](https://www.satimagingcorp.com/satellite-sensors/other-satellite-sensors/sentinel-2a/)*
+\
+
+Using satellite imagery allows us to study Land Cover change because the images cover large geographical areas and have high temporal coverage. The different sensors with images of varying resolutions can help to detect specific land types.
+
+While it is an effective tool to study Land Use and Land Cover Change, many sensors are unable to obtain data and information through cloud cover. Hence, it is important to choose a selected area that is free of cloud cover, otherwise a cloud mask has to be used.
+
+### Project Study Area
+
+The selected area of interest is Punggol which is located in the North-East region of Singapore. The reason for choosing Punggol is because it is one of the few areas that were free of cloud cover. It is strongly recommended to select areas free of cloud as cloud cover would make extracting information more difficult, and a cloud mask would have to be used for cloud removal. Also, since Punggol has undergone rapid development and changes over the years, the team thought that it would be interesting to dive deeper and analyse the land cover changes of Punggol from 2016 to 2020 to uncover interesting insights about the area.
+
+## Scope of Work
+
+This project will be mainly focusing on Land Cover change detection using remote sensing techniques. We will be utilising publicly available satellite data such as Sentinel-2 data as well as literature reviews for the analysis of the project. 
+
+\
+
+For the Multi-spectral Classification of satellite imagery, Supervised Classification technique using the Semi-automatic classification Plugin (SCP) will be used.
+
+\
+
+## Project Schedule
+
+The project schedule is detailed in the Gantt Chart below.
+
+![](gantt_chart.jpg){width="662"}\
+

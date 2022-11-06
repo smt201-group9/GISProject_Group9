@@ -1,0 +1,14 @@
+---
+title: "Methodology"
+editor: visual
+---
+
+## Area Selection
+
+## Data Preparation
+
+## Training and Testing Data Selection
+
+## Classification Methods
+
+## Change Detection

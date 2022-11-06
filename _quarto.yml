@@ -8,17 +8,19 @@ website:
     left:
     - href: overview.html
       text: Overview
-    - href: method.qmd
+    - href: method.html
       text: Methodology
-    - href: analysis.qmd
-      text: Analysis
-    - href: findings.qmd
+    - href: findings.html
       text: Result & Discussion
+    - href: lessons.html
+      text: Lessons Learned
+    - href: poster.html
+      text: Poster
     right:
       - href: index.qmd
         text: Home
       - href: about.qmd
-        text: About Us
+        text: About
 
 format:
   html:

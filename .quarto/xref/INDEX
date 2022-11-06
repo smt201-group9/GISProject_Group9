@@ -7,5 +7,20 @@
   },
   "overview.qmd": {
     "overview.html": "a2400fef"
+  },
+  "method.qmd": {
+    "method.html": "068fea5b"
+  },
+  "analysis.qmd": {
+    "analysis.html": "a66c2085"
+  },
+  "findings.qmd": {
+    "findings.html": "48ed6000"
+  },
+  "lessons.qmd": {
+    "lessons.html": "779d42be"
+  },
+  "poster.qmd": {
+    "poster.html": "b61c0ce6"
   }
 }

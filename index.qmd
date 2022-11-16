@@ -1,8 +1,6 @@
 ---
-title: ""
+title: "SMT201: Geographic Information Systems for Urban Planning"
 ---
-
-## SMT201: Geographic Information Systems for Urban Planning
 
 ![](logo.png){fig-align="center" width="338"}
 

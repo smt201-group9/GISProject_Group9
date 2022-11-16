@@ -94,6 +94,9 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./poster.html">Poster</a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html">Report</a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -117,10 +120,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#area-selection" id="toc-area-selection" class="nav-link active" data-scroll-target="#area-selection">Area Selection</a></li>
+  <li><a href="#data-collection" id="toc-data-collection" class="nav-link active" data-scroll-target="#data-collection">Data Collection</a></li>
+  <li><a href="#area-selection" id="toc-area-selection" class="nav-link" data-scroll-target="#area-selection">Area Selection</a></li>
   <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
-  <li><a href="#training-and-testing-data-selection" id="toc-training-and-testing-data-selection" class="nav-link" data-scroll-target="#training-and-testing-data-selection">Training and Testing Data Selection</a></li>
   <li><a href="#classification-methods" id="toc-classification-methods" class="nav-link" data-scroll-target="#classification-methods">Classification Methods</a></li>
+  <li><a href="#training-and-testing-data-selection" id="toc-training-and-testing-data-selection" class="nav-link" data-scroll-target="#training-and-testing-data-selection">Training and Testing Data Selection</a></li>
+  <li><a href="#classification-accuracy-assessment" id="toc-classification-accuracy-assessment" class="nav-link" data-scroll-target="#classification-accuracy-assessment">Classification Accuracy Assessment</a></li>
   <li><a href="#change-detection" id="toc-change-detection" class="nav-link" data-scroll-target="#change-detection">Change Detection</a></li>
   </ul>
 </nav>
@@ -144,20 +149,180 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p>The following image shows the approach taken by the team to perform the Land Cover Change Detection analysis.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="method.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>For our analysis, we used the Semi-automatic classification Plugin (SCP) in QGIS to perform Supervised Classification and Land Cover Change Detection.</p>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data Collection</h2>
+<p>Sentinel-2 Satellite Imagery data taken from <a href="https://scihub.copernicus.eu/dhus/#/home">Copernicus Open Access Hub</a> was used for the analysis. The dates of the dataset used for 2016 and 2020 are 2016/09/23 and 2020/01/26 respectively.</p>
+</section>
 <section id="area-selection" class="level2">
 <h2 class="anchored" data-anchor-id="area-selection">Area Selection</h2>
+<p>For the purpose of our analysis, we have identified Punggol as our area of interest. There were two reasons for selecting Punggol. First, Punggol has transformed rapidly from its early days as a fishing village to become Singapore’s first eco-town where it is surrounded by rivers and plenty of greenery. Second, the area was free of cloud covers, making it ideal for image analysis. Hence, we are interested in finding out more about changes in vegetation in Punggol over the years and how it has evolved with the changing landscape.</p>
 </section>
 <section id="data-preparation" class="level2">
 <h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
+<p>For better visualisation of Punggol, we will perform image processing on our datasets. This is done by creating True Color (TCC) and False Color Composites (FCC)&nbsp; of Punggol where Sentinel-2 bands 2, 3, 4 and 8 are selected as our bandsets. To create TCC and FCC, ensure that the RGB is set to ‘3-2-1’ and ‘4-3-2’ respectively.</p>
+<section id="section" class="level5">
+<h5 class="anchored" data-anchor-id="section"></h5>
 </section>
-<section id="training-and-testing-data-selection" class="level2">
-<h2 class="anchored" data-anchor-id="training-and-testing-data-selection">Training and Testing Data Selection</h2>
+<section id="true-color-composite" class="level5">
+<h5 class="anchored" data-anchor-id="true-color-composite"><u>True Color Composite</u></h5>
+</section>
+<section id="section-1" class="level5">
+<h5 class="anchored" data-anchor-id="section-1"><img src="TCC_2016.jpg" class="img-fluid" width="386"></h5>
+</section>
+<section id="section-2" class="level5">
+<h5 class="anchored" data-anchor-id="section-2"><img src="TCC_2020.jpg" class="img-fluid" width="383"></h5>
+</section>
+<section id="false-color-composite" class="level5">
+<h5 class="anchored" data-anchor-id="false-color-composite"><u>False Color Composite</u></h5>
+<p><img src="FCC_2016.jpg" class="img-fluid" width="342"></p>
+<p><img src="FCC_2020.jpg" class="img-fluid" width="329"></p>
+</section>
+<section id="ndvi" class="level5">
+<h5 class="anchored" data-anchor-id="ndvi"><u>NDVI</u></h5>
+<p>Normalized Difference Vegetation Index (NDVI) images was also generated with the following formula: <strong>NDVI= ( NIR − Red) / (NIR + Red )</strong></p>
+<p>NDVI helps to detect and quantify the presence of vegetation by using the reflected light in visible and near-infrared bands. The NDVI output for 2016 and 2020 is as shown below.</p>
+<p><img src="NDVI_2016.jpg" class="img-fluid" width="331"></p>
+<p><img src="NDVI_2020.jpg" class="img-fluid" width="332"><br>
+</p>
+</section>
 </section>
 <section id="classification-methods" class="level2">
 <h2 class="anchored" data-anchor-id="classification-methods">Classification Methods</h2>
+<p>Next, we created seven land cover classes.</p>
+<table class="table">
+<colgroup>
+<col style="width: 23%">
+<col style="width: 76%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Land Cover Types</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Water body</td>
+<td>Huge water bodies not confined within land, E.g. Seas</td>
+</tr>
+<tr class="even">
+<td>Inland water</td>
+<td>Lakes, rivers, ponds, streams, groundwater</td>
+</tr>
+<tr class="odd">
+<td>Bare land</td>
+<td>Land not covered by vegetation, water, buildings, etc</td>
+</tr>
+<tr class="even">
+<td>Natural vegetation</td>
+<td>Plants that have been grown naturally without human aid. E.g. Forests, shrubs, trees</td>
+</tr>
+<tr class="odd">
+<td>Managed vegetation</td>
+<td>Vegetation that has been managed by humans. E.g. Parks, grass areas</td>
+</tr>
+<tr class="even">
+<td>Built-up</td>
+<td>Man-made land surfaces for infrastructure, residential and commercial use</td>
+</tr>
+<tr class="odd">
+<td>Impervious surfaces</td>
+<td>Artificial structures that prevent absorption of water into the soil, E.g. Roads, paths</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="training-and-testing-data-selection" class="level2">
+<h2 class="anchored" data-anchor-id="training-and-testing-data-selection">Training and Testing Data Selection</h2>
+<p>As part of Supervised Classification, identification of training samples needs to be done prior to performing classification. Using the color composite images created previously, we digitised the Region of Interests (ROI) for training data. When digitising the ROI, it is important to ensure that the size of the polygon is small and spread evenly across the area. The legend of the training samples are as shown below:</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th>MC ID</th>
+<th>C ID</th>
+<th>Name</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>1</td>
+<td>Water body</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>2</td>
+<td>Inland water</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>3</td>
+<td>Bare land</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>4</td>
+<td>Natural vegetation</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>5</td>
+<td>Managed vegetation</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>6</td>
+<td>Built-up</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td>7</td>
+<td>Impervious surfaces</td>
+</tr>
+</tbody>
+</table>
+<section id="training-sample" class="level5">
+<h5 class="anchored" data-anchor-id="training-sample"><u>Training Sample</u></h5>
+<p><img src="training_2016.jpg" class="img-fluid" width="344"></p>
+<p><img src="training_2020.jpg" class="img-fluid" width="344"></p>
+<p>The same process is repeated later on for selecting the testing sample. However, we need to ensure that the testing data does not overlap with the training sample.</p>
+<p>Once the training data has been completed, we will manually change the colours of the ROI so that it is more intuitive. As shown below, land cover types such as water body and inland water are similar, thus both were changed to <em>Blue</em>while vegetation such as natural and managed vegetation are colored <em>Green</em>. This makes the interpretation of the classification output more comprehensible.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="land_cover_table.jpg" class="img-fluid figure-img" width="429"></p>
+</figure>
+</div>
+<p>Next, Supervised Classification is performed using the SCP plugin and the result of the classification output for 2016 and 2020 is as shown below.</p>
+<p><img src="land_cover_classification.jpg" class="img-fluid"></p>
+<p><br>
+</p>
+</section>
+</section>
+<section id="classification-accuracy-assessment" class="level2">
+<h2 class="anchored" data-anchor-id="classification-accuracy-assessment">Classification Accuracy Assessment</h2>
+<p>Accuracy assessment is an important part of classification. The metrics that we looked at when performing the accuracy assessment are namely; User’s Accuracy, Producer’s Accuracy, Overall Accuracy and Kappa Statistic. The minimum accuracy level for a reliable classification should be at least 85%. After many iterations, we managed to obtain an overall accuracy of <strong>86%</strong> and <strong>72%</strong> for 2016 and 2020 respectively.</p>
 </section>
 <section id="change-detection" class="level2">
 <h2 class="anchored" data-anchor-id="change-detection">Change Detection</h2>
+<p>Lastly, once we have generated the land cover classification for 2016 and 2020, we performed the Land Cover Change Detection which overlays the two maps to identify changes in land cover. From the 49 cross classes identified, we changed the colours to represent changes in vegetation. <em>Purple</em> represents increased vegetation, Yellow represents reduced vegetation, <em>Green</em> represents unchanged vegetation and <em>Black</em> represents non-vegetated areas.&nbsp;</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cross_class_code_table.jpg" class="img-fluid figure-img" width="449"></p>
+</figure>
+</div>
+<p>The final output showing the changes in vegetation in Punggol from 2016 and 2020 is shown below.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="vegetation_change.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
 
 
 </section>

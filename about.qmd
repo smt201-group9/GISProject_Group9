@@ -5,3 +5,13 @@ title: "About"
 This website is for the fulfillment of SMT201: Geographic Information Systems for Urban Planning AY2022-23 T1 under Professor Kam Tin Seong.
 
 Click [here](https://github.com/smt201-group9/GISProject_Group9) to access our GitHub repository 🗺️
+
+## Team Members
+
+![](group_photo.jpg){fig-align="center" width="255"}
+
+-   😋 Hazel Ma RuiQi (hazelma.2020\@scis.smu.edu.sg)
+
+-   😆 Victoria Grace Ann Mei Yi (victoriaann.2021\@scis.smu.edu.sg)
+
+-   😄 Thong Cher Kheem (ckthong.2020\@scis.smu.edu.sg)

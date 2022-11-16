@@ -16,6 +16,8 @@ website:
       text: Lessons Learned
     - href: poster.html
       text: Poster
+    - href: report.html
+      text: Report
     right:
       - href: index.qmd
         text: Home
@@ -27,6 +29,7 @@ format:
     theme: lux
     css: styles.css
     toc: true
+    fontsize: 95%
 
 editor: visual
 

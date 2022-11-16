@@ -4,90 +4,146 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Click here to access our GitHub repository 🗺️"
+    "text": "This website is for the fulfillment of SMT201: Geographic Information Systems for Urban Planning AY2022-23 T1 under Professor Kam Tin Seong.\nClick here to access our GitHub repository 🗺️"
+  },
+  {
+    "objectID": "about.html#team-members",
+    "href": "about.html#team-members",
+    "title": "About",
+    "section": "Team Members",
+    "text": "Team Members\n\n\n\n\n\n\n😋 Hazel Ma RuiQi (hazelma.2020@scis.smu.edu.sg)\n😆 Victoria Grace Ann Mei Yi (victoriaann.2021@scis.smu.edu.sg)\n😄 Thong Cher Kheem (ckthong.2020@scis.smu.edu.sg)"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "GIS Project",
-    "section": "",
-    "text": "Welcome to Group 9’s GIS Project Website!"
-  },
-  {
-    "objectID": "overview.html",
-    "href": "overview.html",
     "title": "Group 9",
     "section": "",
-    "text": "In this project, we are given two major themes and sub-themes. A detailed description of this project is available on this page. Land cover classification is a commonly used application area of digital image analysis.\nIn this project, the following articles will be reviewed."
+    "text": "In this project, we are given two major themes and sub-themes. The topic our group has chosen is Theme 1 Sub-theme 2: Land cover change detection using high resolution multi-spectral satellite data.\n\nSingapore's urbanization has progressed rapidly due to rising demand for public housing. This increasing demand for housing estates, especially for Build-To-Order (BTO) flats puts greater pressure on HDB to ramp up the supply of flats to meet the increasing housing needs.\nWith more land reserved for residential purposes, biodiversity loss and pressures on natural ecosystems are becoming more pertinent, especially with increasing land cover change due to changing land uses. Punggol being Singapore’s first eco-town, we are interested in what is the extent to which recent urban developments in Punggol have changed its land cover, starting from the opening of Waterway Point in 2016, to implementations of smart initiatives for Northshore District in 2020.\nIn this project, we analysed the land cover changes and impact on Punggol from 2016 to 2020 through the use of remote sensing data, satellite imagery and image processing techniques.\nUsing Sentinel-2 satellite imagery data, we created True and False Color Composites of the map. By defining seven land cover classes; namely Water body, Inland water, Bare land, Natural vegetation, Managed vegetation, Built-up and Impervious surfaces, we digitised the training and testing samples to perform Supervised Classification. Lastly, we performed the land cover change detection using the Semi-automatic classification Plugin (SCP) to identify changes in vegetation.\nFrom 2016 to 2020, Managed vegetation had the highest decrease in land cover, while Water body, Bare land and Built-up increased significantly. The results of the land cover classification showed a high overall accuracy of 86% and Kappa Statistic of 0.88 for 2016, and an overall accuracy of 72% and Kappa Statistic of 0.67 for 2020. \n=Based on the Land Cover Change analysis of Punggol, we discovered several land cover changes from 2016 to 2020. For water, there was only a slight change from 4.89km2  in 2016 to 4.78km2 in 2020. Vegetation, on the other hand saw moderate level of changes from  6.53km2 in 2016 to 5.63km2 in 2020, where majority of vegetation was converted to bare land and built-up areas which were primarily used for the developments of BTO projects and upcoming developments such as Punggol Digital District. Lastly, for land terrain…"
   },
   {
-    "objectID": "overview.html#motivation",
-    "href": "overview.html#motivation",
-    "title": "Group 9",
-    "section": "Motivation",
-    "text": "Motivation"
+    "objectID": "method.html",
+    "href": "method.html",
+    "title": "Methodology",
+    "section": "",
+    "text": "The following image shows the approach taken by the team to perform the Land Cover Change Detection analysis.\nFor our analysis, we used the Semi-automatic classification Plugin (SCP) in QGIS to perform Supervised Classification and Land Cover Change Detection."
   },
   {
-    "objectID": "overview.html#objectives",
-    "href": "overview.html#objectives",
-    "title": "Group 9",
-    "section": "Objectives",
-    "text": "Objectives\nThe objective of this project is to…."
+    "objectID": "method.html#data-collection",
+    "href": "method.html#data-collection",
+    "title": "Methodology",
+    "section": "Data Collection",
+    "text": "Data Collection\nSentinel-2 Satellite Imagery data taken from Copernicus Open Access Hub was used for the analysis. The dates of the dataset used for 2016 and 2020 are 2016/09/23 and 2020/01/26 respectively."
   },
   {
-    "objectID": "overview.html#task",
-    "href": "overview.html#task",
-    "title": "Group 9",
-    "section": "Task",
-    "text": "Task\nThe project tasks are as follows:"
-  },
-  {
-    "objectID": "overview.html#data",
-    "href": "overview.html#data",
-    "title": "Group 9",
-    "section": "Data",
-    "text": "Data\nFor the purpose of this project, Sentinel-2 Satellite Data will be used. The following are the IDs of the satellite data for 2016 and 2020:\n\nS2A_MSIL1C_20160923T031532_N0204_R118_T48NUG_20160923T033246\nS2A_MSIL1C_20200126T032011_N0208_R118_T48NUG_20200126T061348\n\nThe data is taken from Copernicus Open Access Hub and can be downloaded via this link\nThe rationale behind choosing Sentinel-2 over Landsat-8 is because Sentinel-2 provides high resolution optical imaging for land services at a 10m resolution, which can potentially yield better accuracy. However, Sentinel-2 data is only available from June 2015 onwards, which means it is unable to detect earlier change prior to June 2015. Hence, 2016 and 2020 satellite images will be used in our analysis.\nThe Sentinel-2 satellites each carry a single multi-spectral instrument (MSI) with 13 spectral channels in the visible/near infrared (VNIR) and short wave infrared spectral range (SWIR).\nThe table below provides more details about the 13 spectral bands.\n\nSource: Satellite Imaging Corporation\n\nUsing satellite imagery allows us to study Land Cover change because the images cover large geographical areas and have high temporal coverage. The different sensors with images of varying resolutions can help to detect specific land types.\nWhile it is an effective tool to study Land Use and Land Cover Change, many sensors are unable to obtain data and information through cloud cover. Hence, it is important to choose a selected area that is free of cloud cover, otherwise a cloud mask has to be used.\n\nProject Study Area\nThe selected area of interest is Punggol which is located in the North-East region of Singapore. The reason for choosing Punggol is because it is one of the few areas that were free of cloud cover. It is strongly recommended to select areas free of cloud as cloud cover would make extracting information more difficult, and a cloud mask would have to be used for cloud removal. Also, since Punggol has undergone rapid development and changes over the years, the team thought that it would be interesting to dive deeper and analyse the land cover changes of Punggol from 2016 to 2020 to uncover interesting insights about the area."
-  },
-  {
-    "objectID": "overview.html#scope-of-work",
-    "href": "overview.html#scope-of-work",
-    "title": "Group 9",
-    "section": "Scope of Work",
-    "text": "Scope of Work\nThis project will be mainly focusing on Land Cover change detection using remote sensing techniques. We will be utilising publicly available satellite data such as Sentinel-2 data as well as literature reviews for the analysis of the project. \n\n\nFor the Multi-spectral Classification of satellite imagery, Supervised Classification technique using the Semi-automatic classification Plugin (SCP) will be used."
-  },
-  {
-    "objectID": "overview.html#project-schedule",
-    "href": "overview.html#project-schedule",
-    "title": "Group 9",
-    "section": "Project Schedule",
-    "text": "Project Schedule\nThe project schedule is detailed in the Gantt Chart below."
+    "objectID": "method.html#area-selection",
+    "href": "method.html#area-selection",
+    "title": "Methodology",
+    "section": "Area Selection",
+    "text": "Area Selection\nFor the purpose of our analysis, we have identified Punggol as our area of interest. There were two reasons for selecting Punggol. First, Punggol has transformed rapidly from its early days as a fishing village to become Singapore’s first eco-town where it is surrounded by rivers and plenty of greenery. Second, the area was free of cloud covers, making it ideal for image analysis. Hence, we are interested in finding out more about changes in vegetation in Punggol over the years and how it has evolved with the changing landscape."
   },
   {
     "objectID": "method.html#data-preparation",
     "href": "method.html#data-preparation",
     "title": "Methodology",
     "section": "Data Preparation",
-    "text": "Data Preparation"
+    "text": "Data Preparation\nFor better visualisation of Punggol, we will perform image processing on our datasets. This is done by creating True Color (TCC) and False Color Composites (FCC)  of Punggol where Sentinel-2 bands 2, 3, 4 and 8 are selected as our bandsets. To create TCC and FCC, ensure that the RGB is set to ‘3-2-1’ and ‘4-3-2’ respectively.\n\n\n\n\nTrue Color Composite\n\n\n\n\n\n\n\n\nFalse Color Composite\n\n\n\n\nNDVI\nNormalized Difference Vegetation Index (NDVI) images was also generated with the following formula: NDVI= ( NIR − Red) / (NIR + Red )\nNDVI helps to detect and quantify the presence of vegetation by using the reflected light in visible and near-infrared bands. The NDVI output for 2016 and 2020 is as shown below."
   },
   {
     "objectID": "method.html#training-and-testing-data-selection",
     "href": "method.html#training-and-testing-data-selection",
     "title": "Methodology",
     "section": "Training and Testing Data Selection",
-    "text": "Training and Testing Data Selection"
+    "text": "Training and Testing Data Selection\nAs part of Supervised Classification, identification of training samples needs to be done prior to performing classification. Using the color composite images created previously, we digitised the Region of Interests (ROI) for training data. When digitising the ROI, it is important to ensure that the size of the polygon is small and spread evenly across the area. The legend of the training samples are as shown below:\n\n\n\nMC ID\nC ID\nName\n\n\n\n\n1\n1\nWater body\n\n\n2\n2\nInland water\n\n\n3\n3\nBare land\n\n\n4\n4\nNatural vegetation\n\n\n5\n5\nManaged vegetation\n\n\n6\n6\nBuilt-up\n\n\n7\n7\nImpervious surfaces\n\n\n\n\nTraining Sample\n\n\nThe same process is repeated later on for selecting the testing sample. However, we need to ensure that the testing data does not overlap with the training sample.\nOnce the training data has been completed, we will manually change the colours of the ROI so that it is more intuitive. As shown below, land cover types such as water body and inland water are similar, thus both were changed to Bluewhile vegetation such as natural and managed vegetation are colored Green. This makes the interpretation of the classification output more comprehensible. \n\n\n\n\n\nNext, Supervised Classification is performed using the SCP plugin and the result of the classification output for 2016 and 2020 is as shown below."
   },
   {
     "objectID": "method.html#classification-methods",
     "href": "method.html#classification-methods",
     "title": "Methodology",
     "section": "Classification Methods",
-    "text": "Classification Methods"
+    "text": "Classification Methods\nNext, we created seven land cover classes.\n\n\n\n\n\n\n\nLand Cover Types\nDescription\n\n\n\n\nWater body\nHuge water bodies not confined within land, E.g. Seas\n\n\nInland water\nLakes, rivers, ponds, streams, groundwater\n\n\nBare land\nLand not covered by vegetation, water, buildings, etc\n\n\nNatural vegetation\nPlants that have been grown naturally without human aid. E.g. Forests, shrubs, trees\n\n\nManaged vegetation\nVegetation that has been managed by humans. E.g. Parks, grass areas\n\n\nBuilt-up\nMan-made land surfaces for infrastructure, residential and commercial use\n\n\nImpervious surfaces\nArtificial structures that prevent absorption of water into the soil, E.g. Roads, paths"
+  },
+  {
+    "objectID": "method.html#classification-accuracy-assessment",
+    "href": "method.html#classification-accuracy-assessment",
+    "title": "Methodology",
+    "section": "Classification Accuracy Assessment",
+    "text": "Classification Accuracy Assessment\nAccuracy assessment is an important part of classification. The metrics that we looked at when performing the accuracy assessment are namely; User’s Accuracy, Producer’s Accuracy, Overall Accuracy and Kappa Statistic. The minimum accuracy level for a reliable classification should be at least 85%. After many iterations, we managed to obtain an overall accuracy of 86% and 72% for 2016 and 2020 respectively."
   },
   {
     "objectID": "method.html#change-detection",
     "href": "method.html#change-detection",
     "title": "Methodology",
     "section": "Change Detection",
-    "text": "Change Detection"
+    "text": "Change Detection\nLastly, once we have generated the land cover classification for 2016 and 2020, we performed the Land Cover Change Detection which overlays the two maps to identify changes in land cover. From the 49 cross classes identified, we changed the colours to represent changes in vegetation. Purple represents increased vegetation, Yellow represents reduced vegetation, Green represents unchanged vegetation and Black represents non-vegetated areas. \n\n\n\n\n\nThe final output showing the changes in vegetation in Punggol from 2016 and 2020 is shown below."
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "",
+    "text": "Over the past few decades, Singapore has witnessed the rapid progression of urbanization due to rising demand for public housing. In 2020, the demand for Build-To-Order (BTO) flats jumped by 70% as compared to previous years due to many of the younger generation’s desire to start a family (Sun, 2021). In response to this, HDB will be increasing their supply of new flats over the next few years to meet the high housing demand (HDB, 2021). Now that more land will be reserved for residential purposes, the loss of biodiversity and pressures on ecosystem services are becoming more pertinent especially with increasing land cover change due to changing land uses. \nLand use and land cover change detection are an important source of information for decision making. Land cover shows areas that are covered by forests, wetland, impervious surfaces, agriculture and other land and water types. Land cover change can be determined by analyzing satellite imagery and is crucial in making informed policy, development and planning decisions. In contrast, land use refers to how people utililse the land for various purposes like recreation, development and more (Natural Resources Canada, 2015).\nIn this project, we utilised remote sensing data, satellite imagery and image processing techniques to study the change in land cover detection of our selected area of interest, Punggol for years 2016 and 2020."
+  },
+  {
+    "objectID": "overview.html#motivation",
+    "href": "overview.html#motivation",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "Motivation",
+    "text": "Motivation\nWith Punggol New Town as Singapore’s first ecotown established in 2010, we are interested in how ‘eco’ or sustainable it has been especially after Waterway has gained more traction among locals since its opening in 2016. \nFurthermore, we are interested in how recent urban developments to meet residential demands have changed the town's land uses. In specificity, Northshore District's smart and sustainable precincts have been recently spearheaded by URA and HDB through smart planning ever since their first success in promoting sustainable green living through Treelodge@Punggol (Eastern Loop) (HDB, n.d.).\nWith Punggol being the up-and-coming estate in Singapore, there are many future development plans that may impact the land cover use in that area. An example is the Punggol Digital District scheduled to open in 2023, which is known as the \"smart-district\" that brings together industry and academia through collaboration of work spaces and facilities (URA,n.d.). Another promising development is the Punggol Coast MRT which will bring more convenience to the residents of Punggol, reducing the travel time between Punggol and Pasir Ris from 45 minutes to just 20 minutes (Hao, 2021). These commercial and transportation infrastructure may result in alterations in land cover use so that more space is available for such developments.\nAs such, it would be interesting to dive deeper to analyse the changes in land cover to meet the increasing demand and the impact it has on Punggol as Singapore's first eco-town.\n\n\n\n\n\nSource: Stacked Homes"
+  },
+  {
+    "objectID": "overview.html#objectives",
+    "href": "overview.html#objectives",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "Objectives",
+    "text": "Objectives\nBased on the above, our project 3 main objectives are as follows:\n\nPerform Multi-spectral classification techniques on satellite images\nVisualise and analyse changes in vegetation cover in Punggol from 2016 and 2020\nIdentify impact of land cover change on Punggol and provide recommendations moving forward"
+  },
+  {
+    "objectID": "overview.html#data",
+    "href": "overview.html#data",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "Data",
+    "text": "Data\nFor the purpose of this project, Sentinel-2 Satellite Data will be used. The data is taken from Copernicus Open Access Hub and can be downloaded via this link\nThe following are the IDs of the satellite data for 2016 and 2020:\n\nS2A_MSIL1C_20160923T031532_N0204_R118_T48NUG_20160923T033246\nS2A_MSIL1C_20200126T032011_N0208_R118_T48NUG_20200126T061348\n\nUsing 2020 as an example, the following datasets should be imported into QGIS for the analysis.\n\nT48NUG_20200126T032011_B01.jp2\nT48NUG_20200126T032011_B02.jp2\nT48NUG_20200126T032011_B03.jp2\nT48NUG_20200126T032011_B04.jp2\nT48NUG_20200126T032011_B05.jp2\nT48NUG_20200126T032011_B06.jp2\nT48NUG_20200126T032011_B07.jp2\nT48NUG_20200126T032011_B08.jp2\nT48NUG_20200126T032011_B8A.jp2\nT48NUG_20200126T032011_B09.jp2\nT48NUG_20200126T032011_B10.jp2\nT48NUG_20200126T032011_B11.jp2\nT48NUG_20200126T032011_B12.jp2\nT48NUG_20200126T032011_TCI.jp2\n\n*The datasets are located in the IMG_DATA folder and only data with the JP2 File type is used\nThe rationale behind choosing Sentinel-2 over Landsat-8 is because Sentinel-2 provides high resolution optical imaging for land services at a 10m resolution, which can potentially yield better accuracy. However, Sentinel-2 data is only available from June 2015 onwards, which means it is unable to detect earlier change prior to June 2015. Hence, 2016 and 2020 satellite images will be used in our analysis.\nThe Sentinel-2 satellites each carry a single multi-spectral instrument (MSI) with 13 spectral channels in the visible/near infrared (VNIR) and short wave infrared spectral range (SWIR).\nThe table below provides more details about the 13 spectral bands.\n\nSource: Satellite Imaging Corporation\n\nUsing satellite imagery allows us to study Land Cover change because the images cover large geographical areas and have high temporal coverage. The different sensors with images of varying resolutions can help to detect specific land types.\n\nWhile it is an effective tool to study Land Use and Land Cover Change, many sensors are unable to obtain data and information through cloud cover. Hence, it is important to choose a selected area that is free of cloud cover, otherwise a cloud mask has to be used.\n\nProject Study Area\n\n\n\n\n\nThe selected area of interest is Punggol which is located in the northeastern region of Singapore. The reason for choosing Punggol is because it is one of the few areas that were free of cloud cover. It is strongly recommended to select areas free of cloud as cloud cover would make extracting information more difficult, and a cloud mask would have to be used for cloud removal. Punggol has undergone rapid development and changes over the years, and with many future developments such as the Punggol Digital District and residential developments coming up, it would be interesting to find out the changes in land cover and use to meet rising residential demands."
+  },
+  {
+    "objectID": "overview.html#scope-of-work",
+    "href": "overview.html#scope-of-work",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "Scope of Work",
+    "text": "Scope of Work\nThis project will be mainly focusing on Land Cover change detection using remote sensing techniques. We will be utilising publicly available satellite data such as Sentinel-2 data as well as literature reviews for the analysis of the project. The scope of the project will cover the process of area selection and data collection, data preparation, generating training and testing data, performing Multi-spectral Classification, and finally performing land cover change detection and analyzing the results. For the Multi-spectral Classification of satellite imagery, Supervised Classification technique using the Semi-automatic classification Plugin (SCP) will be used."
+  },
+  {
+    "objectID": "overview.html#project-schedule",
+    "href": "overview.html#project-schedule",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "Project Schedule",
+    "text": "Project Schedule\nThe project schedule is detailed in the Gantt Chart below."
+  },
+  {
+    "objectID": "findings.html",
+    "href": "findings.html",
+    "title": "Results & Discussion",
+    "section": "",
+    "text": "For a more detailed analysis, please refer to our report here."
+  },
+  {
+    "objectID": "findings.html#land-cover-classification",
+    "href": "findings.html#land-cover-classification",
+    "title": "Results & Discussion",
+    "section": "Land Cover Classification",
+    "text": "Land Cover Classification\n\n\n\n\n\nThe results of the land cover classification of Punggol in 2016 and 2020 shows seven classes of land cover namely; water body, inland water, bare land, natural vegetation, managed vegetation, built-up and impervious surfaces.\n\nArea\n\n\n\n\n\nFrom 2016 to 2020, out of the seven classes identified, four of them saw an increase in area and they are Water body, Bare land, Natural vegetation and Built-up. In particular, Water body, Bare land and Built-up had a more-than-doubled increase in area of 93%, 143% and 86% respectively. The largest increase was for Bare land whose area increased from 1.11km2 to 2.70km2. On the other hand, land cover classes such as Inland water, Managed vegetation and Impervious surfaces all experienced a decrease, with Managed vegetation having the sharpest decline of 53%.\n\n\nProportion\n\nLooking at the proportion of land cover classes, Managed vegetation and Built-up were the dominant land cover class in 2016, both with a proportion of 22%, while the least classified was Inland water with a percentage of 5%. However, in 2020, the percentage of Managed vegetation dropped drastically to 8% while Built-up increased to 32% and constituted the largest proportion of area. Similar to 2016, Inland water had the lowest proportion of area (2%). Other than Built-up which increased in proportion, land covers such as Water body and Bare land increased to 27% and 11% respectively. However, despite the increase in area for Natural vegetation from 3.11km2  to 3.47km2  from 2016 to 2020, the proportion of the land cover decreased from 16% to 14%. This is because the increase in other land cover classes such as Water body, Bare land and Built-up was significantly higher than the increase in area for Natural vegetation, making the increase in that particular land cover insignificant. \n\n\nLand Cover Types\n\n\n\n\nWater body and Inland water\nLand cover classes such as water body and inland water had some changes from 2016 to 2020. In particular, water body saw a huge increase in area from 3.5km2 in 2016 to 6.71km2 in 2020. Inland water, on the other hand, decreased from 0.90km2 to 0.48km2, and areas which were originally inland water in 2016 were classified as water body in 2020.\n\n\nBare land\nIn 2016, bare land only constituted 1.11km2 of area. Within a span of 4 years, the area increased to 2.70km2. Majority of the bare land will be reserved for future developments in Punggol such as new BTO projects as well as commercial developments.\n\n\nManaged vegetation and Natural vegetation\nFor vegetation land cover, managed vegetation experienced a significant decline from 4.29km2 in 2016 to 2.01km2in 2020. Majority of the managed vegetation cover located at the Punggol Point District and Punggol Downtown area was deforested and became Bare land in 2020. Upon further research, it was found that HDB will have two BTO projects in Punggol Point, Punggol Point Crown and Punggol Point Cove that are estimated to be completed by 2024 and will provide at least 2,700 flats (Zheng, 2019). Additionally, the bare land in Punggol Downtown is likely to be used for built-up areas in the subsequent years for the development of commercial developments like the Punggol Digital District and Punggol Coast MRT, slated to open in 2023 and 2024 respectively (Wong, 2020). \nAs for natural vegetation, there was a slight overall increase from 3.11km2 in 2016 to 3.47km2 in 2020, where areas at the Canal District were classified as natural vegetation in 2020. However, the increase in natural vegetation is negligible as compared to increase in other land cover classes. \n\n\nBuilt-up\nBuilt-up areas also experienced a huge increase from 4.24km2 in 2016 to 7.88km2 in 2020 and is also the dominant land cover class for both years. Between 2016 to 2020, there were many new BTO projects introduced to meet the rising housing demands. These areas include Matilda District, Northshore District, and Waterway District, which consist of many new houses. An example is the Northshore Residences I and II, located in Punggol Northshore which were completed in 2020, offering around 1400 housing units. \n\n\nImpervious Surfaces\nLastly, the change in impervious surfaces from 2016 and 2020 is insignificant as the area of impervious surfaces constituted a very small amount of 2.40km2 in 2016 and 1.48km2 , making it difficult to observe the changes by looking at the map. \n\n\n\nAccuracy Assessment\n\n\n\nUser’s Accuracy\nThe User's Accuracy measures the probability that a pixel labelled as a certain class is really in that class. In 2016, the user's accuracy ranged from 61% to 100%, with Impervious surfaces having the lowest user's accuracy and Bare land and Natural vegetation having the highest user's accuracy. In 2020, the user's accuracy ranged from 26% to 100%, with Inland water being the lowest and Bare land being the highest. The low user's accuracy of 26% for Inland water indicates a large number of False Positives, which means many of the pixels that were predicted to be inland water were not actually inland water.\n\n\nProducer’s Accuracy\nThe Producer's Accuracy measures the probability that a pixel in a given class was classified correctly. In 2016, the producer's accuracy ranged from 46% to 100%, with Built-up having the lowest producer's accuracy, and Water body, Inland water, Bare land, Managed vegetation having the highest. In 2020, the producer's accuracy ranged from 32% to 100%, with Built-up  being the lowest and Water body, Inland water and Natural vegetation being the highest. The low producer's accuracy for Built-up for both 2016 and 2020 indicates a large number of False Negatives, many pixels that were predicted to be in a different class belong to the built up class.\n\n\nOverall Accuracy\nThe overall accuracy of a land cover classification refers to how effectively the pixels were grouped into the correct land cover class. The overall accuracy for 2016 and 2020 is 86% and 72% respectively. According to Anderson (1976), the minimum accuracy for land cover classification should be at least 85%. Based on the threshold, the overall accuracy for 2016 is at a relatively acceptable level of 86%, indicating that the majority of the pixels were correctly classified. However, the overall accuracy for 2020 is relatively lower at 72%, which is also below the threshold, indicating that there may be some discrepancies in the land cover classification results. \n\n\nKappa Statistic\nThe Kappa Statistic provides an overall assessment of the accuracy of the classification by measuring how the classification results compare to values assigned by chance. The higher the value, the more accurate the classification is. The Kappa Statistic is 0.83 and 0.67 for 2016 and 2020 respectively, and based on the rating criteria, the strength of agreements lies in an almost perfect range for 2016 and a substantial range for 2020.\n\n\n\nKappa Statistics\nStrength of Agreement\n\n\n\n\n< 0.00\nPoor\n\n\n0.00 - 0.20\nSlight\n\n\n0.21 - 0.40\nFair\n\n\n0.41 - 0.60\nModerate\n\n\n0.61 - 0.80\nSubstantial\n\n\n0.81 - 1.00\nAlmost perfect\n\n\n\n\n\nF1 Score\nThe F1 score is a harmonic average of precision and recall and it is a measure of accuracy. The higher the score, the more accurate the classification model is.\nBased on the results, the F1 score for 2016 and 2020 is 88% and 76% respectively. Although the F1 score for 2016 is relatively high, indicating that the classification is more accurate, the F1 score for 2020 is lower than ideal at 76%. Hence, further improvement needs to be done for 2020 in order to achieve a higher F1 score and a higher overall accuracy level."
+  },
+  {
+    "objectID": "overview.html#references",
+    "href": "overview.html#references",
+    "title": "Land Cover Change Detection of Punggol from 2016 to 2020",
+    "section": "References",
+    "text": "References\nHao, Z. (2021, January 15). 4 future developments that will increase punggol property prices. https://serviceback.com/blog/article/4-future-developments-that-will-increase-punggol-property-prices\nHDB. (n.d.). Retrieved November 9, 2022, from https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/punggol-ecotown/treelodgepunggol\nHDB. (2021, December 16). HDB to Ramp Up Flat Supply by 35% Over Next Two Years. https://www.hdb.gov.sg/about-us/news-and-publications/press-releases/16122021-HDB-to-Ramp-Up-Flat-Supply-by-35-Percent-Over-Next-Two-Years \nNatural Resources Canada. (2015, February 4). Land cover & land use. https://www.nrcan.gc.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/tutorial-fundamentals-remote-sensing/educational-resources-applications/land-cover-biomass-mapping/land-cover-land-use/9373 \nSun, D. (2021, November 21). Demand for BTO HDB flats jumped 70% in 2020, with 87,800 applications. The Straits Times. https://www.straitstimes.com/singapore/housing/demand-for-build-to-order-hdb-flats-jumped-in-2020-with-87800-applications \nURA. (n.d.). Retrieved November 9, 2022, from https://www.ura.gov.sg/Corporate/Planning/Master-Plan/Urban-Transformations/Punggol-Digital-District"
+  },
+  {
+    "objectID": "findings.html#references",
+    "href": "findings.html#references",
+    "title": "Results & Discussion",
+    "section": "References",
+    "text": "References\nWong, L. (2020, January 18). Punggol Digital District to have more jobs close to green, smart homes. The Straits Times. https://www.straitstimes.com/singapore/punggol-digital-district-to-have-more-jobs-close-to-green-smart-homes  \n\nZheng, Z. (2019, September). 2,724 new BTO flats in Punggol Point waterfront district to launch in September. https://mothership.sg/2019/09/punggol-point-bto-september-2019/"
   }
 ]

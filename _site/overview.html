@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Group 9 -</title>
+<title>Group 9 - Land Cover Change Detection of Punggol from 2016 to 2020</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -94,6 +94,9 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./poster.html">Poster</a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./report.html">Report</a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
@@ -120,45 +123,90 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
   <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
   <li><a href="#objectives" id="toc-objectives" class="nav-link" data-scroll-target="#objectives">Objectives</a></li>
-  <li><a href="#task" id="toc-task" class="nav-link" data-scroll-target="#task">Task</a></li>
   <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a>
   <ul class="collapse">
   <li><a href="#project-study-area" id="toc-project-study-area" class="nav-link" data-scroll-target="#project-study-area">Project Study Area</a></li>
   </ul></li>
   <li><a href="#scope-of-work" id="toc-scope-of-work" class="nav-link" data-scroll-target="#scope-of-work">Scope of Work</a></li>
   <li><a href="#project-schedule" id="toc-project-schedule" class="nav-link" data-scroll-target="#project-schedule">Project Schedule</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Land Cover Change Detection of Punggol from 2016 to 2020</h1>
+</div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+    
+  </div>
+  
+
+</header>
 
 <section id="introduction" class="level2">
 <h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>In this project, we are given two major themes and sub-themes. A detailed description of this project is available on this page. Land cover classification is a commonly used application area of digital image analysis.</p>
-<p>In this project, the following articles will be reviewed.</p>
+<p>Over the past few decades, Singapore has witnessed the rapid progression of urbanization due to rising demand for public housing. In 2020, the demand for Build-To-Order (BTO) flats jumped by 70% as compared to previous years due to many of the younger generation’s desire to start a family (Sun, 2021). In response to this, HDB will be increasing their supply of new flats over the next few years to meet the high housing demand (HDB, 2021). Now that more land will be reserved for residential purposes, the loss of biodiversity and pressures on ecosystem services are becoming more pertinent especially with increasing land cover change due to changing land uses.&nbsp;</p>
+<p>Land use and land cover change detection are an important source of information for decision making. Land cover shows areas that are covered by forests, wetland, impervious surfaces, agriculture and other land and water types. Land cover change can be determined by analyzing satellite imagery and is crucial in making informed policy, development and planning decisions. In contrast, land use refers to how people utililse the land for various purposes like recreation, development and more (Natural Resources Canada, 2015).</p>
+<p>In this project, we utilised remote sensing data, satellite imagery and image processing techniques to study the change in land cover detection of our selected area of interest, Punggol for years 2016 and 2020.</p>
 </section>
 <section id="motivation" class="level2">
 <h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
+<p>With Punggol New Town as Singapore’s first ecotown established in 2010, we are interested in how ‘eco’ or sustainable it has been especially after Waterway has gained more traction among locals since its opening in 2016.&nbsp;</p>
+<p>Furthermore, we are interested in how recent urban developments to meet residential demands have changed the town's land uses. In specificity, Northshore District's smart and sustainable precincts have been recently spearheaded by URA and HDB through smart planning ever since their first success in promoting sustainable green living through Treelodge@Punggol (Eastern Loop) (HDB, n.d.).</p>
+<p>With Punggol being the up-and-coming estate in Singapore, there are many future development plans that may impact the land cover use in that area. An example is the Punggol Digital District scheduled to open in 2023, which is known as the "smart-district" that brings together industry and academia through collaboration of work spaces and facilities (URA,n.d.). Another promising development is the Punggol Coast MRT which will bring more convenience to the residents of Punggol, reducing the travel time between Punggol and Pasir Ris from 45 minutes to just 20 minutes (Hao, 2021). These commercial and transportation infrastructure may result in alterations in land cover use so that more space is available for such developments.</p>
+<p>As such, it would be interesting to dive deeper to analyse the changes in land cover to meet the increasing demand and the impact it has on Punggol as Singapore's first eco-town.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="punggol_districts.jpg" class="img-fluid figure-img" width="366"></p>
+</figure>
+</div>
+<p><em>Source: <a href="https://stackedhomes.com/editorial/punggol-hdb-bto-and-resale-prices/">Stacked Homes</a></em><br>
+</p>
 </section>
 <section id="objectives" class="level2">
 <h2 class="anchored" data-anchor-id="objectives">Objectives</h2>
-<p>The objective of this project is to….</p>
-</section>
-<section id="task" class="level2">
-<h2 class="anchored" data-anchor-id="task">Task</h2>
-<p>The project tasks are as follows:</p>
+<p>Based on the above, our project 3 main objectives are as follows:</p>
+<ol type="1">
+<li><p>Perform Multi-spectral classification techniques on satellite images</p></li>
+<li><p>Visualise and analyse changes in vegetation cover in Punggol from 2016 and 2020</p></li>
+<li><p>Identify impact of land cover change on Punggol and provide recommendations moving forward</p></li>
+</ol>
 </section>
 <section id="data" class="level2">
 <h2 class="anchored" data-anchor-id="data">Data</h2>
-<p>For the purpose of this project, <strong>Sentinel-2 Satellite Data</strong> will be used. The following are the IDs of the satellite data for 2016 and 2020:</p>
+<p>For the purpose of this project, Sentinel-2 Satellite Data will be used. The data is taken from Copernicus Open Access Hub and can be downloaded via this <a href="https://scihub.copernicus.eu/dhus/#/home">link</a></p>
+<p>The following are the IDs of the satellite data for 2016 and 2020:</p>
 <ul>
 <li><p>S2A_MSIL1C_20160923T031532_N0204_R118_T48NUG_20160923T033246</p></li>
 <li><p>S2A_MSIL1C_20200126T032011_N0208_R118_T48NUG_20200126T061348</p></li>
 </ul>
-<p>The data is taken from Copernicus Open Access Hub and can be downloaded via this <a href="https://scihub.copernicus.eu/dhus/#/home">link</a></p>
+<p>Using 2020 as an example, the following datasets should be imported into QGIS for the analysis.</p>
+<ul>
+<li><p>T48NUG_20200126T032011_B01.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B02.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B03.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B04.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B05.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B06.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B07.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B08.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B8A.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B09.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B10.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B11.jp2</p></li>
+<li><p>T48NUG_20200126T032011_B12.jp2</p></li>
+<li><p>T48NUG_20200126T032011_TCI.jp2</p></li>
+</ul>
+<p><em>*The datasets are located in the IMG_DATA folder and only data with the JP2 File type is used</em></p>
 <p>The rationale behind choosing Sentinel-2 over Landsat-8 is because Sentinel-2 provides high resolution optical imaging for land services at a 10m resolution, which can potentially yield better accuracy. However, Sentinel-2 data is only available from June 2015 onwards, which means it is unable to detect earlier change prior to June 2015. Hence, 2016 and 2020 satellite images will be used in our analysis.</p>
 <p>The Sentinel-2 satellites each carry a single multi-spectral instrument (MSI) with 13 spectral channels in the visible/near infrared (VNIR) and short wave infrared spectral range (SWIR).</p>
 <p>The table below provides more details about the 13 spectral bands.</p>
@@ -166,25 +214,37 @@ ul.task-list li input[type="checkbox"] {
 <p><em>Source: <a href="https://www.satimagingcorp.com/satellite-sensors/other-satellite-sensors/sentinel-2a/">Satellite Imaging Corporation</a></em><br>
 </p>
 <p>Using satellite imagery allows us to study Land Cover change because the images cover large geographical areas and have high temporal coverage. The different sensors with images of varying resolutions can help to detect specific land types.</p>
-<p>While it is an effective tool to study Land Use and Land Cover Change, many sensors are unable to obtain data and information through cloud cover. Hence, it is important to choose a selected area that is free of cloud cover, otherwise a cloud mask has to be used.</p>
+<p><br>
+While it is an effective tool to study Land Use and Land Cover Change, many sensors are unable to obtain data and information through cloud cover. Hence, it is important to choose a selected area that is free of cloud cover, otherwise a cloud mask has to be used.</p>
 <section id="project-study-area" class="level3">
 <h3 class="anchored" data-anchor-id="project-study-area">Project Study Area</h3>
-<p>The selected area of interest is Punggol which is located in the North-East region of Singapore. The reason for choosing Punggol is because it is one of the few areas that were free of cloud cover. It is strongly recommended to select areas free of cloud as cloud cover would make extracting information more difficult, and a cloud mask would have to be used for cloud removal. Also, since Punggol has undergone rapid development and changes over the years, the team thought that it would be interesting to dive deeper and analyse the land cover changes of Punggol from 2016 to 2020 to uncover interesting insights about the area.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="punggol_study_area.jpg" class="img-fluid figure-img" width="395"></p>
+</figure>
+</div>
+<p>The selected area of interest is Punggol which is located in the northeastern region of Singapore. The reason for choosing Punggol is because it is one of the few areas that were free of cloud cover. It is strongly recommended to select areas free of cloud as cloud cover would make extracting information more difficult, and a cloud mask would have to be used for cloud removal. Punggol has undergone rapid development and changes over the years, and with many future developments such as the Punggol Digital District and residential developments coming up, it would be interesting to find out the changes in land cover and use to meet rising residential demands.</p>
 </section>
 </section>
 <section id="scope-of-work" class="level2">
 <h2 class="anchored" data-anchor-id="scope-of-work">Scope of Work</h2>
-<p>This project will be mainly focusing on Land Cover change detection using remote sensing techniques. We will be utilising publicly available satellite data such as Sentinel-2 data as well as literature reviews for the analysis of the project.&nbsp;</p>
-<p><br>
-</p>
-<p>For the Multi-spectral Classification of satellite imagery, Supervised Classification technique using the Semi-automatic classification Plugin (SCP) will be used.</p>
-<p><br>
-</p>
+<p>This project will be mainly focusing on Land Cover change detection using remote sensing techniques. We will be utilising publicly available satellite data such as Sentinel-2 data as well as literature reviews for the analysis of the project. The scope of the project will cover the process of area selection and data collection, data preparation, generating training and testing data, performing Multi-spectral Classification, and finally performing land cover change detection and analyzing the results. For the Multi-spectral Classification of satellite imagery, Supervised Classification technique using the Semi-automatic classification Plugin (SCP) will be used.</p>
 </section>
 <section id="project-schedule" class="level2">
 <h2 class="anchored" data-anchor-id="project-schedule">Project Schedule</h2>
 <p>The project schedule is detailed in the Gantt Chart below.</p>
 <p><img src="gantt_chart.jpg" class="img-fluid" width="662"><br>
+</p>
+</section>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p>Hao, Z. (2021, January 15). 4 future developments that will increase punggol property prices. <a href="https://serviceback.com/blog/article/4-future-developments-that-will-increase-punggol-property-prices" class="uri">https://serviceback.com/blog/article/4-future-developments-that-will-increase-punggol-property-prices</a></p>
+<p>HDB. (n.d.). Retrieved November 9, 2022, from <a href="https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/punggol-ecotown/treelodgepunggol" class="uri">https://www.hdb.gov.sg/about-us/our-role/smart-and-sustainable-living/punggol-ecotown/treelodgepunggol</a></p>
+<p>HDB. (2021, December 16). HDB to Ramp Up Flat Supply by 35% Over Next Two Years. <a href="https://www.hdb.gov.sg/about-us/news-and-publications/press-releases/16122021-HDB-to-Ramp-Up-Flat-Supply-by-35-Percent-Over-Next-Two-Years" class="uri">https://www.hdb.gov.sg/about-us/news-and-publications/press-releases/16122021-HDB-to-Ramp-Up-Flat-Supply-by-35-Percent-Over-Next-Two-Years</a>&nbsp;</p>
+<p>Natural Resources Canada. (2015, February 4). Land cover &amp; land use. <a href="https://www.nrcan.gc.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/tutorial-fundamentals-remote-sensing/educational-resources-applications/land-cover-biomass-mapping/land-cover-land-use/9373" class="uri">https://www.nrcan.gc.ca/maps-tools-and-publications/satellite-imagery-and-air-photos/tutorial-fundamentals-remote-sensing/educational-resources-applications/land-cover-biomass-mapping/land-cover-land-use/9373</a>&nbsp;</p>
+<p>Sun, D. (2021, November 21). Demand for BTO HDB flats jumped 70% in 2020, with 87,800 applications. The Straits Times. <a href="https://www.straitstimes.com/singapore/housing/demand-for-build-to-order-hdb-flats-jumped-in-2020-with-87800-applications" class="uri">https://www.straitstimes.com/singapore/housing/demand-for-build-to-order-hdb-flats-jumped-in-2020-with-87800-applications</a>&nbsp;</p>
+<p>URA. (n.d.). Retrieved November 9, 2022, from <a href="https://www.ura.gov.sg/Corporate/Planning/Master-Plan/Urban-Transformations/Punggol-Digital-District" class="uri">https://www.ura.gov.sg/Corporate/Planning/Master-Plan/Urban-Transformations/Punggol-Digital-District</a></p>
+<p><br>
 </p>
 
 

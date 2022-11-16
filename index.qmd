@@ -2,13 +2,15 @@
 title: ""
 ---
 
+## SMT201: Geographic Information Systems for Urban Planning
+
 ![](logo.png){fig-align="center" width="338"}
 
 In this project, we are given two major themes and sub-themes. The topic our group has chosen is Theme 1 Sub-theme 2: Land cover change detection using high resolution multi-spectral satellite data.
 
 ------------------------------------------------------------------------
 
-Singapore\'s urbanization has progressed rapidly due to rising demand for public housing. This increasing demand for housing estates, especially for Build-To-Order (BTO) flats puts greater pressure on HDB to ramp up the supply of flats to meet the increasing housing needs.
+Singapore's urbanization has progressed rapidly due to rising demand for public housing. This increasing demand for housing estates, especially for Build-To-Order (BTO) flats puts greater pressure on HDB to ramp up the supply of flats to meet the increasing housing needs.
 
 With more land reserved for residential purposes, biodiversity loss and pressures on natural ecosystems are becoming more pertinent, especially with increasing land cover change due to changing land uses. Punggol being Singapore's first eco-town, we are interested in what is the extent to which recent urban developments in Punggol have changed its land cover, starting from the opening of Waterway Point in 2016, to implementations of smart initiatives for Northshore District in 2020.
 

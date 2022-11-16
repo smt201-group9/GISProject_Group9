@@ -50,7 +50,7 @@ NDVI helps to detect and quantify the presence of vegetation by using the reflec
 Next, we created seven land cover classes.
 
 | **Land Cover Types** | **Description**                                                                         |
-|-----------------|-------------------------------------------------------|
+|----------------------|-----------------------------------------------------------------------------------------|
 | Water body           | Huge water bodies not confined within land, E.g. Seas                                   |
 | Inland water         | Lakes, rivers, ponds, streams, groundwater                                              |
 | Bare land            | Land not covered by vegetation, water, buildings, etc                                   |
@@ -81,7 +81,7 @@ As part of Supervised Classification, identification of training samples needs t
 
 The same process is repeated later on for selecting the testing sample. However, we need to ensure that the testing data does not overlap with the training sample.
 
-Once the training data has been completed, we will manually change the colours of the ROI so that it is more intuitive. As shown below, land cover types such as water body and inland water are similar, thus both were changed to *Blue*while vegetation such as natural and managed vegetation are colored *Green*. This makes the interpretation of the classification output more comprehensible. 
+Once the training data has been completed, we will manually change the colours of the ROI so that it is more intuitive. As shown below, land cover types such as water body and inland water are similar, thus both were changed to *Blue* while vegetation such as natural and managed vegetation are colored *Green*. This makes the interpretation of the classification output more comprehensible. 
 
 ![](land_cover_table.jpg){fig-align="center" width="429"}
 

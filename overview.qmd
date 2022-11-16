@@ -15,11 +15,11 @@ In this project, we utilised remote sensing data, satellite imagery and image pr
 
 With Punggol New Town as Singapore's first ecotown established in 2010, we are interested in how 'eco' or sustainable it has been especially after Waterway has gained more traction among locals since its opening in 2016. 
 
-Furthermore, we are interested in how recent urban developments to meet residential demands have changed the town\'s land uses. In specificity, Northshore District\'s smart and sustainable precincts have been recently spearheaded by URA and HDB through smart planning ever since their first success in promoting sustainable green living through Treelodge\@Punggol (Eastern Loop) (HDB, n.d.).
+Furthermore, we are interested in how recent urban developments to meet residential demands have changed the town's land uses. In specificity, Northshore District's smart and sustainable precincts have been recently spearheaded by URA and HDB through smart planning ever since their first success in promoting sustainable green living through Treelodge\@Punggol (Eastern Loop) (HDB, n.d.).
 
-With Punggol being the up-and-coming estate in Singapore, there are many future development plans that may impact the land cover use in that area. An example is the Punggol Digital District scheduled to open in 2023, which is known as the \"smart-district\" that brings together industry and academia through collaboration of work spaces and facilities (URA,n.d.). Another promising development is the Punggol Coast MRT which will bring more convenience to the residents of Punggol, reducing the travel time between Punggol and Pasir Ris from 45 minutes to just 20 minutes (Hao, 2021). These commercial and transportation infrastructure may result in alterations in land cover use so that more space is available for such developments.
+With Punggol being the up-and-coming estate in Singapore, there are many future development plans that may impact the land cover use in that area. An example is the Punggol Digital District scheduled to open in 2023, which is known as the "smart-district" that brings together industry and academia through collaboration of work spaces and facilities (URA,n.d.). Another promising development is the Punggol Coast MRT which will bring more convenience to the residents of Punggol, reducing the travel time between Punggol and Pasir Ris from 45 minutes to just 20 minutes (Hao, 2021). These commercial and transportation infrastructure may result in alterations in land cover use so that more space is available for such developments.
 
-As such, it would be interesting to dive deeper to analyse the changes in land cover to meet the increasing demand and the impact it has on Punggol as Singapore\'s first eco-town.
+As such, it would be interesting to dive deeper to analyse the changes in land cover to meet the increasing demand and the impact it has on Punggol as Singapore's first eco-town.
 
 ![](punggol_districts.jpg){fig-align="center" width="366"}
 
@@ -37,7 +37,7 @@ Based on the above, our project 3 main objectives are as follows:
 
 ## Data
 
-For the purpose of this project, Sentinel-2 Satellite Data will be used. The data is taken from Copernicus Open Access Hub and can be downloaded via this [link](https://scihub.copernicus.eu/dhus/#/home )
+For the purpose of this project, Sentinel-2 Satellite Data will be used. The data is taken from Copernicus Open Access Hub and can be downloaded via this [link](https://scihub.copernicus.eu/dhus/#/home)
 
 The following are the IDs of the satellite data for 2016 and 2020:
 
@@ -123,4 +123,3 @@ Sun, D. (2021, November 21). Demand for BTO HDB flats jumped 70% in 2020, with 8
 URA. (n.d.). Retrieved November 9, 2022, from <https://www.ura.gov.sg/Corporate/Planning/Master-Plan/Urban-Transformations/Punggol-Digital-District>
 
 \
-

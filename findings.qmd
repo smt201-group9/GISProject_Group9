@@ -23,11 +23,11 @@ From 2016 to 2020, out of the seven classes identified, four of them saw an incr
 
 ![](land_proportion.jpg)
 
-Looking at the proportion of land cover classes, Managed vegetation and Built-up were the dominant land cover class in 2016, both with a proportion of 22%, while the least classified was Inland water with a percentage of 5%. However, in 2020, the percentage of Managed vegetation dropped drastically to 8% while Built-up increased to 32% and constituted the largest proportion of area. Similar to 2016, Inland water had the lowest proportion of area (2%). Other than Built-up which increased in proportion, land covers such as Water body and Bare land increased to 27% and 11% respectively. However, despite the increase in area for Natural vegetation from 3.11km^2^  to 3.47km^2^  from 2016 to 2020, the proportion of the land cover decreased from 16% to 14%. This is because the increase in other land cover classes such as Water body, Bare land and Built-up was significantly higher than the increase in area for Natural vegetation, making the increase in that particular land cover insignificant. 
+Looking at the proportion of land cover classes, Managed vegetation and Built-up were the dominant land cover class in 2016, both with a proportion of 22%, while the least classified was Inland water with a percentage of 5%. However, in 2020, the percentage of Managed vegetation dropped drastically to 8% while Built-up increased to 32% and constituted the largest proportion of area. Similar to 2016, Inland water had the lowest proportion of area (2%). Other than Built-up which increased in proportion, land covers such as Water body and Bare land increased to 27% and 11% respectively. However, despite the increase in area for Natural vegetation from 3.11km^2^  to 3.47km^2^  from 2016 to 2020, the proportion of the land cover decreased from 16% to 14%. This is because the rate of increase in other land cover classes such as Water body, Bare land and Built-up exceeded the rate of increase in area for Natural vegetation.
 
 ### Land Cover Types
 
-#### ![](districts.jpg) 
+#### ![](districts.jpg)
 
 #### Water body and Inland water
 
@@ -37,7 +37,7 @@ Land cover classes such as water body and inland water had some changes from 201
 
 In 2016, bare land only constituted 1.11km^2^ of area. Within a span of 4 years, the area increased to 2.70km^2^. Majority of the bare land will be reserved for future developments in Punggol such as new BTO projects as well as commercial developments.
 
-#### Managed vegetation and Natural vegetation 
+#### Managed vegetation and Natural vegetation
 
 For vegetation land cover, managed vegetation experienced a significant decline from 4.29km^2^ in 2016 to 2.01km^2^in 2020. Majority of the managed vegetation cover located at the Punggol Point District and Punggol Downtown area was deforested and became Bare land in 2020. Upon further research, it was found that HDB will have two BTO projects in Punggol Point, Punggol Point Crown and Punggol Point Cove that are estimated to be completed by 2024 and will provide at least 2,700 flats (Zheng, 2019). Additionally, the bare land in Punggol Downtown is likely to be used for built-up areas in the subsequent years for the development of commercial developments like the Punggol Digital District and Punggol Coast MRT, slated to open in 2023 and 2024 respectively (Wong, 2020). 
 
@@ -51,25 +51,23 @@ Built-up areas also experienced a huge increase from 4.24km^2^ in 2016 to 7.88km
 
 Lastly, the change in impervious surfaces from 2016 and 2020 is insignificant as the area of impervious surfaces constituted a very small amount of 2.40km^2^ in 2016 and 1.48km^2^ , making it difficult to observe the changes by looking at the map. 
 
-###  Accuracy Assessment
+### Accuracy Assessment
 
 ![](accuracy_assessment.jpg)\
 
-
 #### User's Accuracy
 
-The User\'s Accuracy measures the probability that a pixel labelled as a certain class is really in that class. In 2016, the user\'s accuracy ranged from 61% to 100%, with Impervious surfaces having the lowest user\'s accuracy and Bare land and Natural vegetation having the highest user\'s accuracy. In 2020, the user\'s accuracy ranged from 26% to 100%, with Inland water being the lowest and Bare land being the highest. The low user\'s accuracy of 26% for Inland water indicates a large number of False Positives, which means many of the pixels that were predicted to be inland water were not actually inland water.
+The User's Accuracy measures the probability that a pixel labelled as a certain class is really in that class. In 2016, the user's accuracy ranged from 61% to 100%, with Impervious surfaces having the lowest user's accuracy and Bare land and Natural vegetation having the highest user's accuracy. In 2020, the user's accuracy ranged from 26% to 100%, with Inland water being the lowest and Bare land being the highest. The low user's accuracy of 26% for Inland water indicates a large number of False Positives, which means many of the pixels that were predicted to be inland water were not actually inland water.
 
-#### Producer's Accuracy 
+#### Producer's Accuracy
 
-
-The Producer\'s Accuracy measures the probability that a pixel in a given class was classified correctly. In 2016, the producer\'s accuracy ranged from 46% to 100%, with Built-up having the lowest producer\'s accuracy, and Water body, Inland water, Bare land, Managed vegetation having the highest. In 2020, the producer\'s accuracy ranged from 32% to 100%, with Built-up  being the lowest and Water body, Inland water and Natural vegetation being the highest. The low producer\'s accuracy for Built-up for both 2016 and 2020 indicates a large number of False Negatives, many pixels that were predicted to be in a different class belong to the built up class.
+The Producer's Accuracy measures the probability that a pixel in a given class was classified correctly. In 2016, the producer's accuracy ranged from 46% to 100%, with Built-up having the lowest producer's accuracy, and Water body, Inland water, Bare land, Managed vegetation having the highest. In 2020, the producer's accuracy ranged from 32% to 100%, with Built-up  being the lowest and Water body, Inland water and Natural vegetation being the highest. The low producer's accuracy for Built-up for both 2016 and 2020 indicates a large number of False Negatives, many pixels that were predicted to be in a different class belong to the built up class.
 
 #### Overall Accuracy
 
 The overall accuracy of a land cover classification refers to how effectively the pixels were grouped into the correct land cover class. The overall accuracy for 2016 and 2020 is 86% and 72% respectively. According to Anderson (1976), the minimum accuracy for land cover classification should be at least 85%. Based on the threshold, the overall accuracy for 2016 is at a relatively acceptable level of 86%, indicating that the majority of the pixels were correctly classified. However, the overall accuracy for 2020 is relatively lower at 72%, which is also below the threshold, indicating that there may be some discrepancies in the land cover classification results. 
 
-####  **Kappa Statistic**
+#### **Kappa Statistic**
 
 The Kappa Statistic provides an overall assessment of the accuracy of the classification by measuring how the classification results compare to values assigned by chance. The higher the value, the more accurate the classification is. The Kappa Statistic is 0.83 and 0.67 for 2016 and 2020 respectively, and based on the rating criteria, the strength of agreements lies in an almost perfect range for 2016 and a substantial range for 2020.
 
@@ -88,9 +86,11 @@ The F1 score is a harmonic average of precision and recall and it is a measure o
 
 Based on the results, the F1 score for 2016 and 2020 is 88% and 76% respectively. Although the F1 score for 2016 is relatively high, indicating that the classification is more accurate, the F1 score for 2020 is lower than ideal at 76%. Hence, further improvement needs to be done for 2020 in order to achieve a higher F1 score and a higher overall accuracy level.
 
-# Land Change Detection 
+# Land Change Detection
 
 ## References
+
+Anderson, J. R. (1976). A land use and land cover classification system for use with remote sensor data (Vol. 964). US Government Printing Office.
 
 Wong, L. (2020, January 18). Punggol Digital District to have more jobs close to green, smart homes. The Straits Times. <https://www.straitstimes.com/singapore/punggol-digital-district-to-have-more-jobs-close-to-green-smart-homes>  
 
@@ -98,9 +98,3 @@ Wong, L. (2020, January 18). Punggol Digital District to have more jobs close to
 Zheng, Z. (2019, September). 2,724 new BTO flats in Punggol Point waterfront district to launch in September. <https://mothership.sg/2019/09/punggol-point-bto-september-2019/> 
 
 \
-
-
-
-
-
-

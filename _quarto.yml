@@ -6,6 +6,8 @@ website:
   navbar:
     background: dark
     left:
+    - href: index.qmd
+      text: Home
     - href: overview.html
       text: Overview
     - href: method.html
@@ -19,8 +21,6 @@ website:
     - href: report.html
       text: Report
     right:
-      - href: index.qmd
-        text: Home
       - href: about.qmd
         text: About
 
@@ -29,7 +29,7 @@ format:
     theme: lux
     css: styles.css
     toc: true
-    fontsize: 95%
+    fontsize: 85%
 
 editor: visual
 

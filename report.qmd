@@ -4,3 +4,5 @@ editor: visual
 ---
 
 For the full analysis, please refer to our report via this [link](https://drive.google.com/file/d/1V2R7GhA5pDpg88z8RTk5h8JQBbKfpEhn/view?usp=sharing).
+
+![](logo.png){fig-align="center" width="384"}

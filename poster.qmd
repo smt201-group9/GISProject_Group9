@@ -3,4 +3,4 @@ title: "Poster"
 editor: visual
 ---
 
-![](Poster.jpg)
+![](GIS%20Poster.jpg){fig-align="center"}

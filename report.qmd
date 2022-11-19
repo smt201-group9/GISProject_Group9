@@ -5,4 +5,6 @@ editor: visual
 
 For the full analysis, please refer to our report via this [link](https://drive.google.com/file/d/1V2R7GhA5pDpg88z8RTk5h8JQBbKfpEhn/view?usp=sharing).
 
+For the Meta Data, please refer to this [link](https://docs.google.com/document/d/1PUI_gl_yoC2WF2SuMgZnZ4kdDtH4KVxo/edit?usp=sharing&ouid=117321078356491857094&rtpof=true&sd=true)
+
 ![](logo.png){fig-align="center" width="384"}
